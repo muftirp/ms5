@@ -1,0 +1,271 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    display: grid;
+    font-size: 14px;
+    
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #181A1C;
+    
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  header .logo img {
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+  header .menu ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    
+  }
+  
+  header .menu li {
+    margin-left: 60px;
+  }
+  
+  header .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .profile {
+    display: flex;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  /* Banner Styling */
+  .banner {
+    height: 600px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0), rgba(26, 26, 26, 0.99)),
+    url('../images/poster/banner1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  
+  .banner-content {
+    text-align: left;
+    max-width: 600px;
+    margin-left: 40px;
+    margin-top: 310px;
+  }
+  
+  .banner h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .banner button {
+    margin-top: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  .button1 {
+    background-color: #0f1af1;
+    border: none;
+    padding: 10px 20px;
+  }
+  .button2 {
+    background-color: #494949;
+    border: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+  }
+  .button2 img {
+    margin-right: 5px;
+    vertical-align:middle;
+    
+  }
+
+  .button3 {
+    background-color: #05000000;
+    border: 2px solid #ffffff;
+    margin-left: 20px;
+    padding: 10px 10px;
+  }
+  .iconVolumeoff {
+    margin-right: 5px;
+    vertical-align:middle;
+    margin-right: 40px;
+    margin-top: 430px;
+
+  }
+  .button4 {
+    background-color: #00000000;
+    border: 2px solid #ffffff;
+    margin-left: 20px;
+    padding: 10px 10px;
+  }
+
+  
+
+
+  /* Movie Collection Styling */
+  .movie-collection {
+    padding: 40px;
+    background-color: #181A1C;
+  }
+  
+  .movie-collection h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .movie-list {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  
+  .movie-item {
+    display: relative;
+    margin-right: 10px;
+  }
+  .movie-tittle {
+    display: absolute;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .movie-img {
+    width: 302px;
+    height: 162px;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .movie-img1 {
+    width: 234px;
+    height: 365px;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  header p {
+    padding: 50px;
+    text-align: center;
+    color: rgb(45, 37, 26);
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 700;
+  }
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding-right:0px;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #ffff;
+    background-color: #181A1C;
+  
+  }
+  
+  .footer > * {
+    flex: 1 100%;
+  }
+  .side-one{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+    margin-top: 35px;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  } 
+  .footer li {
+    line-height: 2em;
+  }
+  .footer a {
+    text-decoration: none;
+    color: #ffff;
+  }
+  .side-two {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .side-two > * {
+    flex: 1 100%;
+    margin-right: 1.25em;
+  }
+
+  .box a {
+    text-decoration: none;
+    color: #999;
+  }
+  .h-box {
+    column-count: 4;
+    column-gap: 2.25em;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 10px;
+  
+    color: #999;
+  }
+
+  .side-one p {
+    padding-right: 20%;
+    color: #999;
+  }
+  @media screen and (min-width: 600px) {
+    .side-two > * {
+      flex: 1;
+    }
+    .features {
+      flex-grow: 2;
+    }
+    .side-one {
+      flex: 1 0px;
+    }
+    .side-two {
+      flex: 2 0px;
+    }
+    
+  }
+  
+  @media (max-width: 600px) {
+    header p{
+      font-size: 40px;
+    }
+    .footer {
+      padding: 40px;
+    }
+  }
+
