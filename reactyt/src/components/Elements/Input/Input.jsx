@@ -1,12 +1,15 @@
 import React from 'react'
 
 export default function Input(props) {
-    const {type, placeholder } = props
+    const {type, placeholder, name } = props
   return (
     <input
             type={type}
+            className="w-full px-4 py-2 rounded-full  text-white focus:ring-2  bg-transparent border-1"
             placeholder={placeholder}
-            className="w-full px-4 py-2 rounded-full bg-gray-800 text-white focus:ring-2  bg-transparent border-1"
+            name={name}
+            id={name}
+            
           />
   )
 }

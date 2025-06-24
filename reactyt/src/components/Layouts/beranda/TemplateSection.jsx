@@ -19,15 +19,15 @@ export default function TemplateSection() {
 
 
             {[...Array(section.movies)].map((_, idx) => (
-              <div className='relative'>
-
-
+              <div className='relative' key={idx}>
+                                    
+                
                 <div key={idx} className="overflow-x-auto space-x-4 scrollbar-hide     min-w-[170px] flex-shrink-0 rounded-lg">
                   <div className="absolute px-2 py-1 text-[12px] bg-blue-700 text-white mx-4 my-3  rounded-full ">Episode Baru</div>
                   <div className='absolute'>
-                    <div className="flex">
-                      <div className="mt-18 mr-30 ml-2 text-[6px] text-justify text-white">Judul Film</div>
-                      <div className="mt-18 text-[6px] text-white">Rating</div>
+                    <div className="flex absolute">
+                      <div className="mt-29 mr-30 ml-2 text-[6px] text-justify text-white">Judul Film</div>
+                      <div className="mt-29 text-[6px] text-white">Rating</div>
                     </div>
                   </div>
                   <img src={section.image} alt="Film" className="h-[150px] w-[550px]" />
@@ -55,7 +55,7 @@ export default function TemplateSection() {
 
 
             {[...Array(section.movies)].map((_, idx) => (
-              <div className='relative'>
+              <div className='relative' key={idx}>
 
                 <div key={idx} className="overflow-x-auto space-x-4 scrollbar-hide  min-w-[300px] flex-shrink-0 rounded-lg">
                   {/* <div className="absolute">
@@ -88,7 +88,7 @@ export default function TemplateSection() {
 
 
             {[...Array(section.movies)].map((_, idx) => (
-              <div className='relative'>
+              <div className='relative' key={idx}>
 
                 <div key={idx} className="overflow-x-auto space-x-4 scrollbar-hide     min-w-[300px] flex-shrink-0 rounded-lg">
                   <div className="absolute">

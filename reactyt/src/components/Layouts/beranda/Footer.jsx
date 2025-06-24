@@ -2,6 +2,7 @@ import Logo from "../../Elements/Logo/Logo"
 export default function Footer() {
   return (
     <div>
+      <hr className="border-gray-600" />
       <footer className="bg-[#0d0d0e] text-white py-10">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between">
         {/* Logo dan Hak Cipta */}
@@ -41,7 +42,7 @@ export default function Footer() {
             <ul className="mt-6 sm:mt-8 space-y-1 text-gray-400">
               <li>Romantis</li>
               <li>Sains & Alam Ilmiah &</li>
-              <li>THriller</li>
+              <li>Thriller</li>
             </ul>
           </div>
         </div>

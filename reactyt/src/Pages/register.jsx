@@ -6,7 +6,7 @@ import Description from "../components/Elements/Logo/Description";
 import Label from "../components/Elements/Input/Label";
 import Input from "../components/Elements/Input/Input";
 import Button from "../components/Elements/Button";
-
+import InputForm from "../components/Elements/Input";
 
 export default function RegisterPage() {
   return (
@@ -23,29 +23,39 @@ export default function RegisterPage() {
           </Description>
         </div>
 
-        <div className="mb-4">
+<div className="mb-4">
+          <InputForm
+            label="Username"
+            type="text"
+            name="username"
+            placeholder="Masukkan username" />
+        </div>
+        {/* <div className="mb-4">
           <Label text="Username" />
           <Input type="password"
             placeholder="Masukkan username" />
-        </div>
-
-        <div className="mb-4">
-          <Label text="Kata Sandi" />
-          <div className="relative">
-            <Input type="password"
-              placeholder="Masukkan kata sandi" />
-            <span className="absolute right-3 top-2.5 text-gray-400 cursor-pointer"><img src={pass} alt="" className="mt-1" /></span>
+        </div> */}
+<div className="mb-4 relative">
+          <span className="absolute right-3 top-8.5 text-gray-400 cursor-pointer"><img src={pass} alt="" className="mt-1" /></span>
+          <InputForm
+            label="Kata Sandi"
+            type="password"
+            name="password"
+            placeholder="Masukkan kata sandi" >
+              
+            </InputForm>
           </div>
-        </div>
-
-        <div className="mb-4">
-          <Label text="Konfirmasi Kata Sandi" />
-          <div className="relative">
-            <Input type="password"
-              placeholder="Masukkan kata sandi" />
-            <span className="absolute right-3 top-2.5 text-gray-400 cursor-pointer"><img src={pass} alt="" className="mt-1" /></span>
+<div className="mb-4 relative">
+          <span className="absolute right-3 top-8.5 text-gray-400 cursor-pointer"><img src={pass} alt="" className="mt-1" /></span>
+          <InputForm
+            label="Konfirmasi Kata Sandi"
+            type="password"
+            name="password"
+            placeholder="Masukkan kata sandi" >
+              
+            </InputForm>
           </div>
-        </div>
+        
 
         <div className="flex justify-between text-sm mb-4">
           <span>

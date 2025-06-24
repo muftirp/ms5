@@ -1,8 +1,15 @@
-import React from 'react'
+import Label from './Label'
+import Input from './Input'
 
 export default function InputForm(props) {
+  const { label, name,type, placeholder} = props
 
   return (
-    <div>index</div>
+    <>
+    <Label htmlFor={name}>{label}</Label>          
+    <Input name={name} type={type} placeholder={placeholder}></Input> 
+    
+    </>
+
   )
 }

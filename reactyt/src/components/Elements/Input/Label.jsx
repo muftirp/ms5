@@ -2,8 +2,13 @@ import React from 'react'
 
 export default function Label(props) {
     // Destructure props to get the label text
-    const { text } = props;
+    const { htmlFor, children } = props;
   return (
-    <label className="block text-sm mb-1">{text}</label>
+    <>
+    <label htmlFor={htmlFor}
+    className="block text-sm mb-1" >
+      {children}
+      </label>
+    </>
   )
 }
