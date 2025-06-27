@@ -1,7 +1,7 @@
 import Logo1 from "/src/assets/images/icon/Logo.png";
 
 const handleBeranda = () => {
-    window.location.href = '/beranda1';  
+    window.location.href = '/beranda2';  
 }
 
 
