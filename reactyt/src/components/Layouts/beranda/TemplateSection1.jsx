@@ -69,14 +69,10 @@ export default function TemplateSection1() {
       <h2 className="text-lg font-semibold mb-4">Melanjutkan Tonton Film</h2>
       <div className='flex overflow-x-auto space-x-1 scrollbar-hide'>
 {films1.map((film) => (
-        // <div key={film.id} className="overflow-x-auto space-x-4 scrollbar-hide  min-w-[300px] flex-shrink-0 rounded-lg">
-        
+
         <CardFilm1 key={film.id}>
           <CardFilm1.Header image={film.image}/>
-          {/* <CardFilm1.Body name={film.name}>
-            {film.description}</CardFilm1.Body>
-          <CardFilm1.Footer price={film.price} id={film.id}></CardFilm1.Footer> */}
-        </CardFilm1>
+          </CardFilm1>
        ))}
       </div>
      </div>           

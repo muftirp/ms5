@@ -4,7 +4,8 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import RegisterPage from './Pages/register.jsx'
 import HomePage from './Pages/beranda.jsx'
-import TESTING from './Pages/beranda1.jsx'
+import TESTING1 from './Pages/beranda1.jsx'
+import TESTING2 from './Pages/beranda2.jsx'
 import LoginPage from './Pages/login.jsx'
 import DAFTARSAYA from './Pages/DaftarSaya.jsx'
 import ProfileSaya from './Pages/profileSaya.jsx'
@@ -26,14 +27,18 @@ const router = createBrowserRouter([
     path: '/daftar', 
     element: <RegisterPage /> 
   },
-  // {
-  //   path: '/beranda', 
-  //   element: <HomePage /> 
+  {
+    path: '/beranda', 
+    element: <HomePage /> 
     
-  // },
+  },
   {
     path: '/beranda1', 
-    element: <TESTING /> 
+    element: <TESTING1 /> 
+  },
+   {
+    path: '/beranda2', 
+    element: <TESTING2 /> 
   },
   { 
     path: '/daftarsaya', 
